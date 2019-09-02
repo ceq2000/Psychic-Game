@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link src="assets/css/style.css">
+    <link src="assets/css/reset.css">
+    <title>Word Guessing Game</title>
+</head>
+<body style="background-color: aliceblue"> 
+<div id="container"
+    style="left: 30%; top: 25%; border: 0px solid indianred; font-size: 350%; font-weight: bold; display: flex; align-items: center; justify-content: center">
+<section><img src="assets/images/download.jpg" width="380px"></section>
+</div>
+<!--Start Here-->
+<div class="container">
+    <!-- Content here -->
+    <div id="main-container" class="container" style="border-color: darkblue">
+        <section class="main-section">
+            <h1 style="text-align: center">Guess the word!</h1>
+    <div id="paste_game"
+        style="left: 30%; top: 25%; border: 7px solid indianred; border-style: dotted; font-size: 350%; font-weight: bold; display: flex; align-items: center; justify-content: center">
+    </div>
+    <div id="guess_area" style="height: 8em">
+        <br>
+        <span style="float: left">      
+            <h3>ENTER THE MISSING CHARACTER: 
+                <input type="text" id="guess" id="inputGroup-sizing-lg" style="width: 6cm; border: 2px"><br><br>
+                <button type="button" class="btn btn-primary btn-lg" onClick="guessChar()">GUESS!</button>
+                <button type="button" class="btn btn-secondary btn-lg" onClick="newGame()">NEW GAME!</button><br>
+            </h3>           
+        </span>
+    </div>
+    <br>
+    <strong>Result:</strong>
+    <div id="feedback"
+        style="top: 35%; font-size: 150%; font-weight: bold; background-color: powderblue; display: flex; align-items: center; justify-content: center">
+        >>> result <<<
+    </div>
+    <br> <strong># of attempts:</strong>
+    <div id="attempts"
+        style="top: 35%; font-size: 150%; font-weight: bold; background-color:powderblue; display: flex; align-items: center; justify-content: center">
+        >>> attempts <<<
+    </div>
+</div>
+<!-- <div class="push"></div> -->
+<div class="fixed-bottom" style="text-align: center">
+    <div id="footer" style="background-color: indianred">
+        <!-- Begin Footer Here-->
+        <footer style="color: #ffffff">
+            <span style="align-self: center;">&copy; 2019 Carlos Quinones</span>
+        </footer>
+        <!-- End Footer Here-->
+    </div>
+</div> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<script src="assets/javascript/game.js"></script>
+</body>
+</html>
